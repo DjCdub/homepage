@@ -75,7 +75,7 @@ spec:
               service:
                 name: homepage
                 port:
-                  number: 3000
+                  number: 3003s
             path: /
             pathType: Prefix
 ```

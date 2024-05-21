@@ -54,7 +54,7 @@ homepage:
   volumes:
     - /path/to/config:/app/config
   ports:
-    - 3000:3000
+    - 3003:3003
   restart: unless-stopped
 ```
 
@@ -82,7 +82,7 @@ homepage:
     - /path/to/config:/app/config
     - /var/run/docker.sock:/var/run/docker.sock # pass local proxy
   ports:
-    - 3000:3000
+    -3003:3003
   restart: unless-stopped
 ```
 

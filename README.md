@@ -73,7 +73,7 @@ services:
       PUID: 1000 -- optional, your user id
       PGID: 1000 -- optional, your group id
     ports:
-      - 3000:3000
+      - 3003:3003
     volumes:
       - /path/to/config:/app/config # Make sure your local config directory exists
       - /var/run/docker.sock:/var/run/docker.sock:ro # optional, for docker integrations
@@ -86,7 +86,7 @@ or docker run:
 docker run --name homepage \
   -e PUID=1000 \
   -e PGID=1000 \
-  -p 3000:3000 \
+  -p 3003:3003 \
   -v /path/to/config:/app/config \
   -v /var/run/docker.sock:/var/run/docker.sock:ro \
   --restart unless-stopped \

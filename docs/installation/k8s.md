@@ -254,7 +254,7 @@ metadata:
 spec:
   type: ClusterIP
   ports:
-    - port: 3000
+    - port: 3003
       targetPort: http
       protocol: TCP
       name: http
@@ -295,7 +295,7 @@ spec:
           imagePullPolicy: Always
           ports:
             - name: http
-              containerPort: 3000
+              containerPort: 3003
               protocol: TCP
           volumeMounts:
             - mountPath: /app/config/custom.js
@@ -359,7 +359,7 @@ spec:
               service:
                 name: homepage
                 port:
-                  number: 3000
+                  number: 3003
 ```
 
 ### Multiple Replicas
@@ -384,7 +384,7 @@ spec:
       services:
         - kind: Service
           name: homepage
-          port: 3000
+          port: 3003
           sticky:
             cookie:
               httpOnly: true
